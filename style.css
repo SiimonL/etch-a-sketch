@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Press+Start+2P&display=swap');
+
+/*  
+font-family: 'DM Mono', monospace;
+font-family: 'Press Start 2P', cursive; 
+*/
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.canvas {
+    width: 600px;
+    height: 600px;
+
+    border: 5px black solid;
+
+    display: flex;
+    flex-wrap: wrap;
+    /* display: grid;
+    gap: 0; */
+}
+
+.cell {
+    box-sizing: border-box;
+    /* border: 1px rgb(200, 200, 200) solid; */
+}
