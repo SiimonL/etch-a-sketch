@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,25 +12,33 @@
     <header></header>
     <div class="content">
 
-        <h1>Etch-A-Sketch</h1>
+        <h1 class="title">Etch-A-Sketch</h1>
         <div class="container">
             
             <div class="buttons">
-                <button value="black" id="mode">Black</button>
-                <button value="grayscale" id="mode">Grayscale</button>
-                <button value="rgb" id="mode">Color</button>
-                <button value="additive" id="mode">Additive</button>
-                <button value="ereaser" id="mode">Ereaser</button>
-            
-                <button id="clear">Clear</button>
+                <button id="hold" class="hold-button shadow">Hold to Draw</button>
 
-                <input type="range" min="1" max="70" value="16" name="size" id="size">
-                <label for="size" id="size-label">16x16</label>
+                <button value="black" id="mode" class="selected shadow">Black</button>
+                <button value="grayscale" id="mode" class="shadow">Grayscale</button>
+                <button value="color" id="mode" class="shadow">Color</button>
+                <button value="additive" id="mode" class="shadow">Additive</button>
+                <button value="ereaser" id="mode" class="shadow">Ereaser</button>
+                
+                <button id="clear" class="shadow">Clear</button>
+
+                <input type="range" min="1" max="70" value="16" name="size" id="size" class="shadow">
+                <label for="size" id="size-label" class="size-label">16x16</label>
             </div>
-            <div id="canvas" class="canvas"></div>
+            <div class="canv-container">
+                <div id="canvas" class="canvas shadow"></div>
+                <p class="current">Current: <span id="current-mode">Black</span></p>
+            </div>
         </div>
 
     </div>
-    <footer></footer>
+    <footer>
+        <div class="footer-line"></div>
+        <p class="name">© SiimonL <a href="https://github.com/SiimonL"><img src="./images/github.png" alt="GitHub" width="30"></a></p>
+    </footer>
 </body>
 </html>
